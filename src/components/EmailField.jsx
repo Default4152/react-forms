@@ -8,6 +8,9 @@ var EmailField = React.createClass({
       value: ""
     }
   },
+  clear: function() {
+    this.setState({valid: true, value: ""});
+  },
   onChange: function(e) {
     var val = e.target.value;
 
